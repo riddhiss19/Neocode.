@@ -1,0 +1,238 @@
+[
+    {
+        "js_token": "var",
+        "python_token": ""
+    },
+    {
+        "js_token": "const",
+        "python_token": ""
+    },
+    {
+        "js_token": "function",
+        "python_token": "def"
+    },
+    {
+        "js_token": "() =>",
+        "python_token": "lambda:"
+    },
+    {
+        "js_token": "console.log()",
+        "python_token": "print()"
+    },
+    {
+        "js_token": "for",
+        "python_token": "for"
+    },
+    {
+        "js_token": "while",
+        "python_token": "while"
+    },
+    {
+        "js_token": "if",
+        "python_token": "if"
+    },
+    {
+        "js_token": "else",
+        "python_token": "else"
+    },
+    {
+        "js_token": "switch",
+        "python_token": ""
+    },
+    {
+        "js_token": "case",
+        "python_token": ""
+    },
+    {
+        "js_token": "break",
+        "python_token": "break"
+    },
+    {
+        "js_token": "continue",
+        "python_token": "continue"
+    },
+    {
+        "js_token": "true",
+        "python_token": "True"
+    },
+    {
+        "js_token": "false",
+        "python_token": "False"
+    },
+    {
+        "js_token": "===",
+        "python_token": "=="
+    },
+    {
+        "js_token": "!==",
+        "python_token": "!="
+    },
+    {
+        "js_token": "indexOf()",
+        "python_token": ".index()"
+    },
+    {
+        "js_token": "push()",
+        "python_token": ".append()"
+    },
+    {
+        "js_token": "pop()",
+        "python_token": ".pop()"
+    },
+    {
+        "js_token": "shift()",
+        "python_token": ".pop(0)"
+    },
+    {
+        "js_token": "unshift()",
+        "python_token": ".insert(0)"
+    },
+    {
+        "js_token": "length",
+        "python_token": "len()"
+    },
+    {
+        "js_token": "toString()",
+        "python_token": "str()"
+    },
+    {
+        "js_token": "parseInt()",
+        "python_token": "int()"
+    },
+    {
+        "js_token": "console.error()",
+        "python_token": "print()"
+    },
+    {
+        "js_token": "try",
+        "python_token": "try"
+    },
+    {
+        "js_token": "catch",
+        "python_token": "except"
+    },
+    {
+        "js_token": "throw",
+        "python_token": "raise"
+    },
+    {
+        "js_token": "class",
+        "python_token": "class"
+    },
+    {
+        "js_token": "extends",
+        "python_token": ""
+    },
+    {
+        "js_token": "import",
+        "python_token": "import"
+    },
+    {
+        "js_token": "from",
+        "python_token": "from"
+    },
+    {
+        "js_token": "export",
+        "python_token": ""
+    },
+    {
+        "js_token": "super()",
+        "python_token": "super()"
+    },
+    {
+        "js_token": "static",
+        "python_token": "@staticmethod"
+    },
+    {
+        "js_token": "+",
+        "python_token": "+"
+    },
+    {
+        "js_token": "-",
+        "python_token": "-"
+    },
+    {
+        "js_token": "*",
+        "python_token": "*"
+    },
+    {
+        "js_token": "/",
+        "python_token": "/"
+    },
+    {
+        "js_token": "%",
+        "python_token": "%"
+    },
+    {
+        "js_token": "++",
+        "python_token": "+=1"
+    },
+    {
+        "js_token": "--",
+        "python_token": "-=1"
+    },
+    {
+        "js_token": "+=",
+        "python_token": "+="
+    },
+    {
+        "js_token": "-=",
+        "python_token": "-="
+    },
+    {
+        "js_token": "*=",
+        "python_token": "*="
+    },
+    {
+        "js_token": "/=",
+        "python_token": "/="
+    },
+    {
+        "js_token": "%=",
+        "python_token": "%="
+    },
+    {
+        "js_token": "&&",
+        "python_token": "and"
+    },
+    {
+        "js_token": "||",
+        "python_token": "or"
+    },
+    {
+        "js_token": "!",
+        "python_token": "not"
+    },
+    {
+        "js_token": "==",
+        "python_token": "=="
+    },
+    {
+        "js_token": "!=",
+        "python_token": "!="
+    },
+    {
+        "js_token": ">",
+        "python_token": ">"
+    },
+    {
+        "js_token": "<",
+        "python_token": "<"
+    },
+    {
+        "js_token": ">=",
+        "python_token": ">="
+    },
+    {
+        "js_token": "<=",
+        "python_token": "<="
+    },
+    {
+        "js_token": "===",
+        "python_token": "=="
+    },
+    {
+        "js_token": "!==",
+        "python_token": "!="
+    }
+]

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoCode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">
+            <span>
+                Neo
+            </span>Code</h1>
+        <a href="" class="menu-link" id="menu-link">MENU</a>
+<div class="menu" id="menu">
+        <div class="menu-sub">
+
+            <ul class="links">
+                <li>
+                    <a href="">
+                        Home
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="">
+                        Transpiler
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="">
+                        Readability Checker
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="">
+                        Comment Generator
+                    </a>
+                </li>
+
+                <li id="goback">
+                    Go Back
+                </li>
+            </ul>
+    
+            <div class="menu-image">
+                <img src="/assets/img/Neocode.svg" alt="Neocode SVG" class="svg-image">
+            </div>
+        </div>
+</div>
+
+    </nav>
+
+    <div class="code-converter">
+        <main>
+            <header>
+                
+                <div class="upload-file">
+                    <form action="" method="post">
+                    
+                        <input type="file" value="JS File" accept=".js" name="js-file" id="file-input" class="file-input" required>
+                        <button class="custom-file-btn" id="custom-file-btn">
+                            <img src="./assets/icons/add.png" alt="Add" width="20"> Upload Your Code
+                        </button>
+                    </form>
+                </div>  
+    
+                <div class="py-header">
+                 
+                    <div class="lang-img">
+                        <img src="./assets/img/python.svg" width="80" alt="JS Logo">
+                    </div>
+                </div>
+            </header>
+    
+           
+    
+            <div class="transpilation-boxes">
+                <div class="js-code">
+    
+                </div>
+                <div class="py-code">
+    
+                </div>
+            </div>
+            <!-- <div class="center-btn-container">
+                <button class="transpile-btn">
+                    <img src="./assets/icons/Refresh.png" alt="Refresh" width="20"> Transpile
+                </button>
+            </div> -->
+        </main>
+
+        <div class="transpiler-svg">
+            <img src="./assets/img/Transpiler.svg"  alt="Transpiler">
+        </div>
+    </div>
+
+
+    <footer>
+        &copy; TY CS D EDI Group 83
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

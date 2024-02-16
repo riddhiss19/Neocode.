@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoCode</title>
+    <link rel="icon" type="image" href="{{ url_for('static', filename='img/logo.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dracula.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">
+            <span>
+                Neo
+            </span>Code</h1>
+        <a href="" class="menu-link" id="menu-link">MENU</a>
+<div class="menu" id="menu">
+        <div class="menu-sub">
+
+            <ul class="links">
+                <li>
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="/">
+                        Transpiler
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="/codeindex">
+                        Readability Checker
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="/comment">
+                        Comment Generator
+                    </a>
+                </li>
+                <li id="goback">
+                    Go Back
+                </li>
+            </ul>
+    
+            <div class="menu-image">
+                <img src="/{{ url_for('static', filename='img/Neocode.svg') }}" alt="Neocode SVG" class="svg-image">
+            </div>
+        </div>
+</div>
+
+    </nav>
+
+    <div class="code-converter">
+        <main>
+            <header>
+               
+                <div class="upload-file">
+                    <form action="/codeindex" method="post" id="form" enctype="multipart/form-data">
+                        <input type="file" value="JS File" accept=".py" name="js-file" id="file-input"  hidden>
+                        <button class="custom-file-btn" id="custom-file-btn">
+                            <img src="{{ url_for('static', filename='img/add.png') }}" alt="Add" width="20"> Upload Your Code
+                        </button>
+                    </form>
+                </div>  
+    
+              
+            </header>
+    
+           
+    
+            <div class="transpilation-boxes">
+              
+               
+                <div class="py-code">
+                    <pre>
+                        <code class="language-python">
+{{py}}
+</code>
+                    </pre>
+                </div>
+                {% if readability_index %}
+                <div class="readability-values">
+                    <h2>
+                        Readability Percentage : {{ readability_index }}
+                    </h2>
+                    <br>
+                    <br>
+
+                    <h3>
+                        Meaningful/Total Variables : {{ meaningful_variables }} / {{ total_variables }}
+                    </h3>
+                    <br>
+                    <h3>
+                        Meaningful/Total Classes : {{ meaningful_class }} / {{ total_class }}
+                    </h3>
+                    <br>
+                    <h3>
+                        Meaningful/Total Function : {{ meaningful_functions }} / {{ total_functions }}
+                    </h3>
+                    <br>
+                    <h3>
+                        Functions With Docstring : {{ functions_with_docstrings }} 
+                    </h3>
+                </div>
+                {% endif %}
+            </div>
+            <!-- <div class="center-btn-container">
+                <button class="transpile-btn">
+                    <img src=".{{ url_for('static', filename='img/Refresh.png') }}" alt="Refresh" width="20"> Transpile
+                </button>
+            </div> -->
+        </main>
+
+        <div class="transpiler-svg">
+            <img src="{{ url_for('static', filename='img/Readability.svg') }}"  alt="Transpiler">
+        </div>
+    </div>
+
+
+    <footer>
+        &copy; TY CS D EDI Group 83
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
